@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Fill-Expertise-Gap.png">
+    <link rel="icon" href="images/red1-fotor-bg-remover-20230614133716.png">
+    <link rel="stylesheet" href="images/close.png">
+    <link rel="stylesheet" href="images/menu.png">
+</head>
+<body>
+    <section class="sub-header3">
+
+        <nav>
+            <a class="TITLE" href="index.html"><img src="images/red.png" />  </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="icons" onclick="closeMenu()">  <img src="images/close.png" /> </i>
+                <ul>
+                    <li><a href="index.html">მთავარი</a></li>
+                    <li><a href="services.html">სერვისები</a></li>
+                    <li><a href="devices.html">მოწყობილობები</a></li>
+                    <li><a href="about.html">ჩვენს შესახებ</a></li>
+                    <li><a href="blog.html">ბლოგი</a></li>
+                    <li><a href="contact.html">კონტაქტი</a></li>
+                    <li><a href="contactEn.html">English</a></li>
+
+
+                </ul>
+
+            </div>
+            <i class="icons" onclick="openMenu()">  <img src="images/menu.png" /> </i>
+        </nav>
+
+        <div class="text-box1">
+            <h1> დაგვიკავშირდით </h1>
+
+        </div>
+
+
+
+    </section>
+
+
+    <!-------------  contact us --------------->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020819.8906076415!2d43.35765950000002!3d42.32078445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd7e64f626b%3A0x4f907964122d4ac2!2sGeorgia!5e0!3m2!1sen!2sge!4v1686055009142!5m2!1sen!2sge" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </section>
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i> <img src="images/home.png" /></i>
+
+                    <h5>საქართველო</h5>
+                    <p>თბილისი</p>
+
+                </div>
+
+                <div>
+                    <i> <img src="images/old-typical-phone.png" /></i>
+
+                    <h5>+995 574 15 19 53</h5>
+                    <p>ორშაბათი - პარასკევი, 10:00 - 18:00 სთ </p>
+
+                </div>
+
+                <div>
+                    <i> <img src="images/email.png"></i>
+
+                    <h5>info@eideas.io</h5>
+                    <p>მოგვმართეთ მეილზე, ნებისმიერ დროს, ნებისმიერი კითხვით</p>
+
+                </div>
+            </div>
+
+
+            <div class="contact-col">
+
+                <form action="Form.php" method="post">
+                    <input type="text" name="name" placeholder="სახელი" required />
+                    <input type="email" name="email" placeholder="მეილი" required />
+                    <input type="text" name="subject" placeholder="თემა" required />
+                    <textarea rows="8" name="message" placeholder="შეკითხვა" recuered></textarea> <br />
+                    <button type="submit" class="btn2">შეკითხვის გაგზავნა</button>
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!------------  footer   -------------------->
+
+    <section class="footer">
+
+        <h4>სად გვიპოვოთ?</h4>
+        <p>დაგვიკავშირდით მთელი მსოფლიოდან. გვიპოვით ლინკებზე: </p>
+        <div class="netIcons">
+
+            <a href="https://www.facebook.com/profile.php?id=100093144684579"> <i><img src="images/facebook_733547.png" /></i> </a>
+            <a href="index.html"> <i><img src="images/internet_4517548.png" /></i> </a>
+            <a href="https://www.linkedin.com/company/%E2%82%91ideas/"> <i><img src="images/linkedin_2504923.png" /></i> </a>
+
+
+        </div>
+
+
+        <p> გვერდი შექმნა <a href="index.html"> <sup>&exponentiale;</sup>1deas </a> </p>
+
+
+    </section>
+
+    <!----------------   javascript part for Menu   -------------------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function openMenu() {
+            navLinks.style.right = "0";
+        }
+        function closeMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "101694919626753");
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v18.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+</body>
+</html>
